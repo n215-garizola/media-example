@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.wrapper {
+  min-height: 800px;
+  width: 70%;
+  margin: 0 auto;
+  background-color: aquamarine;
+
+  .box {
+    width: 50%;
+    height: 200px;
+    background-color: bisque;
+  }
+
+  .media-box {
+    width: 600px;
+    height: 100px;
+    background-color: brown;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .wrapper {
+    background-color: black;
+
+    .media-box {
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .wrapper {
+    background-color: chartreuse;
+  }
+}
